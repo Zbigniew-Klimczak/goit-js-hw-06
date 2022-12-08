@@ -23,18 +23,16 @@ button {
   cursor: pointer;
 }
 /* task 03 */
-.gallery {
-  display: flex;
-  width: 100vh;
-  height: auto;
-}
-.gallery__item {
-  flex-basis: 30%;
+img {
+  display: block;
   width: 100%;
   height: auto;
 }
-.gallery_img {
-  display: block;
-  width: 300px;
-  height: auto;
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery__item {
+  flex-basis: 30%;
+  list-style-type: none;
 }
