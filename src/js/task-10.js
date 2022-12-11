@@ -23,7 +23,7 @@ numberInput.addEventListener("input", (event) => {
 });
 function createBoxes() {
   for (let i = 0; i < number; i++) {
-    let elem = document.createElement(`div${i}`);
+    let elem = document.createElement("div");
     boxes.append(elem);
     boxes.lastChild.style.width = `${30 + 10 * i}px`;
     boxes.lastChild.style.height = `${30 + 10 * i}px`;
