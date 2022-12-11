@@ -7,10 +7,6 @@ const create = document.querySelector(`button[data-create]`);
 const destroy = document.querySelector(`button[data-destroy]`);
 const boxes = document.querySelector("#boxes");
 const numberInput = document.querySelector("input");
-console.log(create);
-console.log(destroy);
-console.log(boxes);
-console.log(numberInput);
 let number = 0;
 boxes.style.height = "auto";
 boxes.style.display = "flex";
@@ -28,6 +24,7 @@ function createBoxes() {
     boxes.lastChild.style.width = `${30 + 10 * i}px`;
     boxes.lastChild.style.height = `${30 + 10 * i}px`;
     boxes.lastChild.style.backgroundColor = getRandomHexColor();
+    console.log(number);
   }
 }
 function destroyBoxes() {
