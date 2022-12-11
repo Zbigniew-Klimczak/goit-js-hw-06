@@ -15,7 +15,6 @@ create.addEventListener("click", createBoxes);
 destroy.addEventListener("click", destroyBoxes);
 numberInput.addEventListener("input", (event) => {
   number = event.currentTarget.value;
-  console.log(number);
 });
 function createBoxes() {
   for (let i = 0; i < number; i++) {
@@ -24,7 +23,6 @@ function createBoxes() {
     boxes.lastChild.style.width = `${30 + 10 * i}px`;
     boxes.lastChild.style.height = `${30 + 10 * i}px`;
     boxes.lastChild.style.backgroundColor = getRandomHexColor();
-    console.log(number);
   }
 }
 function destroyBoxes() {
